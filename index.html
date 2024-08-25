@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://kit.fontawesome.com/312031be1d.js" crossorigin="anonymous"></script> -->
+    <!-- <link rel="icon" href="logo.jpg"> -->
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images\logo.jpg" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#id">About</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <!-- <li> <a href="#certification">Certifications</a></li> -->
+                    <!-- <li> <a href="https://tinyurl.com/Vishalmainresume">Resume</a></li> -->
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hey, I'm <span> Chandu</span></h1>
+                <p>Welcome to my personal website.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------about-------->
+
+    <div id="id">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images\Resume.jpg" alt="Resume_Image">
+                    <!-- this is for Resume -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>I am Chandu an engineering student specialised in Electronics and Communications at CMR Institute
+                        Of Technology.I am outgoing, dedicated, and open-minded. I get across to people and adjust to
+                        changes with ease.
+                        I am much intrested Frontend Development. My strength is my confidence and self adaptability
+                        according to situations.I am a person who can speak different languages which includes telugu,
+                        hindi, english.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>C, Java, Python.</li>
+                            <li><span>Frontend Web Development</span> <br> HTML, CSS .</li>
+                            <!-- <li><span>Project Management</span><br>Foundations of project management, Project initiation.</li>
+                            <li><span>Internet Of Things(IOT)</span><br>Arduino.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>Electronics and Communications Engineering at CMR Institute
+                                Of Technology.</li>
+                            <li><span>2019-2022</span> <br>Govt.Polytechnic Wrangal.</li>
+                            <li><span>2019</span><br>Schooling at Sangamithra Techno School. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Projects-------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-sharp-duotone fa-solid fa-house"></i>
+                    <h2>Home Automation</h2>
+                    <img class="projects-1" src="Images\Home_Project-1.jpg" alt="Home_Project-1">
+                    <p class="para">The project aims at recognition of Home automation through web services i.e through
+                        using wifi, this
+                        project is about accessing or controlling home appliances through using wifi and web server.
+                    </p>
+                    <!-- <a href="https://github.com/20R01A04F3/Room-Air-Purifier.git">Know more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-tag"></i>
+                    <h2>RFID Door lock system</h2>
+                    <img class="projects-2" src="Images\Rfid_Project-2.jpg" alt="Rfid_Project-2">
+                    <p class="para">The project aims at recognition of Door lock system through RFID, Using this project
+                        a person can
+                        access through an door by using RFID Cards and tags.
+
+                    </p>
+                    <!-- <a href="https://github.com/20R01A04F3/Weather-website.git">Know more</a> -->
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Playtone-Music App</h2>
+                    <img class="projects-3" src="IMAGES/projects-3.jpg" alt="projects-3">
+                    <p class="para">Playtone is a simple music web application that canprovide users with a convenient way to listen to music.
+                        The application can allow users to play music tracks by clicking on a play button.The application can be designed to work on different devices and screen sizes, including desktops, laptops, tablets, and smartphones. This can be achieved using responsive design techniques with HTML and CSS.
+                    </p>
+                        <a href="https://github.com/20R01A04F3/playtone.git">Know more</a>
+                </div>
+            </div> -->
+            </div>
+        </div>
+        <!-------Certifications-------->
+        <!-- <div id="certification">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="certi-list">
+                <div class="certi">
+                    <img src="IMAGES/certi-1.jpg" alt="CBIT">
+                    <div class="layer">
+                        <h3>CBIT HACKATHON</h3>
+                        <p>Participated in annual tech fest in web desgining hackathon conducted in CBIT.</p>
+                        <a href="https://drive.google.com/file/d/1Hmee_1ETNhw3rqlgNxX_xsCWFR6fX9wp/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="IMAGES/certi-2.jpg" alt="CBIT">
+                    <div class="layer">
+                        <h3>Project Management</h3>
+                        <p>Certified by Coursera in project management.The certification has enhanced my ability to effectively plan.</p>
+                        <a href="https://drive.google.com/file/d/12pXJm15d1Eks7G4RdPwM5j4I7mN0ur7u/view?usp=share_link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="IMAGES/certi-3.jpg" alt="CBIT">
+                    <div class="layer">
+                        <h3>Data Structures and Algorithms</h3>
+                        <p>Certified by Internshala in DSA.This course thought me basic points to advanced topics in datastructres through C language.</p>
+                        <a href="https://drive.google.com/file/d/1LAYhVOFxhPf8hbXwCsZrlkunKwi5j_Ll/view?usp=share_link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="certi">
+                    <img src="IMAGES/certi-4.jpg" alt="CBIT">
+                    <div class="layer">
+                        <h3>Virtual Experience program on Forage </h3>
+                        <p>Certified by Forage by completing the tasks and getting to know  the work of an intern at Goldmansachs.</p>
+                        <a href="https://drive.google.com/file/d/1dQBN7m8gAzM_S2Z51iBW2q4gK3UZWyKf/view?usp=share_link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+           </div>
+           <a class="btn" href="https://drive.google.com/drive/folders/10jeNXXEqLCPcGTKTNBJhkCrWDQLEso1X?usp=sharing">See more</a>
+        </div>
+    </div> -->
+
+        <!-------Contact-------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i>billachandu79989@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i></i>9705402394</p>
+                        <div class="social-icons">
+                            <!-- <a href="https://leetcode.com/20R01A04F3/">Leetcode</a> -->
+                            <a href="https://www.codechef.com/users/chandu404">Codechef</a>
+                            <a href="https://www.geeksforgeeks.org/user/22r05a0404/">GeekforGeeks</a>
+                            <a href="https://www.linkedin.com/in/billa-chandu2004/"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Billa-Chandu"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a> -->
+                        </div>
+
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" r equired>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2"><a href="#" class="myButton">Submit</a></button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
